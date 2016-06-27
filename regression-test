@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Test with bad command"
+./toy-robot.rb ./test/data/script1 > ./test/data/script1.actual
+
+expected=`md5 -q ./test/data/script1.expected`
+actual=`md5 -q ./test/data/script1.actual`
+
+if [ $expected == $actual ]; then
+  echo "Passed"
+else
+  echo "Failed"
+fi
+
+echo "Test with out of sequence command"
+./toy-robot.rb ./test/data/script2 > ./test/data/script2.actual
+
+expected=`md5 -q ./test/data/script2.expected`
+actual=`md5 -q ./test/data/script2.actual`
+
+if [ $expected == $actual ]; then
+  echo "Passed"
+else
+  echo "Failed"
+fi
