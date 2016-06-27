@@ -1,5 +1,3 @@
-puts Dir.pwd
-
 require 'test/unit'
 
 require 'lib/app'
