@@ -9,7 +9,7 @@ be found in ./test/data
 ```
 $ ./toy-robot.rb <commandfile1> <commandfile2>
 ```
-Or, to enter commands on STDIN. Ctrl+C exits the program in interactive mode.
+Simply call Toy Robot without command line parameters to enter commands on STDIN. Ctrl+C exits the program.
 ```
 $ ./toy-robot.rb
 ```
